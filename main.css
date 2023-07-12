@@ -44,8 +44,8 @@ img {
 }
 
 .dynamic {
-    width: 90%;
-    height: 45px;
+    width: 30%;
+    height: 18px;
     background-color: black;
     position: absolute;
     top: 10px;
@@ -64,13 +64,16 @@ img {
     overflow: hidden;
     border-radius: 50%;
     background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
 }
 
-.profile img{
+.profile img {
     object-fit: cover;
 }
 
-.profile-name{
+.profile-name {
     position: absolute;
     left: 47px;
     font-size: 13px;
@@ -78,4 +81,47 @@ img {
     transform: translateY(-50%);
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+}
+
+.call-attend {
+    position: absolute;
+    right: 3px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: rgb(11, 165, 11);
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+}
+
+.call-hangup i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 42px;
+    color: rgb(230, 8, 8);
+    font-size: 37px;
+    opacity: 0;
+}
+
+.call-hangup::before{
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+.call-attend i {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
 }
