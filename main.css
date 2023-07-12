@@ -1,152 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
 }
 
-.display {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: palegoldenrod;
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fff;
 }
 
-.iphone {
-    width: 250px;
-    height: 500px;
-    border: 5px solid black;
-    border-radius: 35px;
-    overflow: hidden;
-    position: relative;
-    -webkit-box-reflect: below 25px linear-gradient(transparent, rgba(255, 0, 0, 0.527));
+.box {
+  margin: 0.25em;
+  position: relative;
+  width: 77.6mm;
+  height: 160.7mm;
+  background: #666;
+  border-radius: 50px;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-
+.box::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background: #000;
+  border-radius: 48px;
 }
 
-.overlay {
-    width: 100%;
-    height: 100%;
-    /* background: red; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-
+.camera {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(#3f3978,#0c0e29,#283964);
+  border-radius: 50%;
+  top: 27px;
+  opacity: 0.5;
+  left: 170px;
+  z-index: 12;
 }
 
-.iphone:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+.inner {
+  position: absolute;
+  inset: 3px;
+  border-radius: 48px;
+  background: url('https://raw.githubusercontent.com/zouraiz523/iphone-14-pro-max/main/Phone%2014%20Pro%20Max%20and%20Dynamic%20Island/img-bg.webp');
+  background-size: cover;
+  background-position: center;
+  border: 10px solid #000;
+  display: flex;
+  justify-content: center;
+  opacity: 0.4;
+  transition: 0.5s;
 }
 
-.dynamic {
-    width: 30%;
-    height: 18px;
-    background-color: black;
-    position: absolute;
-    top: 10px;
-    border-radius: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: big-bar 2s 1s ease-in-out;
+.inner::before {
+  content: '4:45';
+  color: #fff;
+  position: absolute;
+  top: 60px;
+  font-size: 64px;
+  font-weight: 500;
+  transition: 0.5s;
+  opacity: 1;
+}
+.inner::after {
+  content: 'Thur 15 ☾ 11:49PM';
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  transition: 0.5s;
+  opacity: 1;
+  font-weight: 600;
 }
 
-.iphone:hover  .dynamic{
-    animation: big-bar 2s 1s ease-in-out;
+.inner:hover::before, .inner:hover::after {
+  opacity: 0;
 }
 
-.profile {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 2px;
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
-    border-radius: 50%;
-    background-color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    animation: content 1.9s 1.1s  timing-function delay iteration-count direction fill-mode;
-
+.box:hover .inner {
+  opacity: 1;
 }
 
-.profile img {
-    object-fit: cover;
+.btn {
+  position: absolute;
+  top: 110px;
+  left: -2px;
+  width: 3px;
+  height: 26px;
+  background: radial-gradient(#ccc,#666,#222);
+  border-radius: 4px 0 0 4px;
+  z-index: 10;
 }
 
-.profile-name {
-    position: absolute;
-    left: 47px;
-    font-size: 13px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 0;
+.btn.btn2{
+  top: 160px;
+  height: 40px;
 }
 
-.call-attend {
-    position: absolute;
-    right: 3px;
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
-    background-color: rgb(11, 165, 11);
-    top: 50%;
-    transform: translateY(-50%);
-    display: grid;
-    place-content: center;
-    opacity: 0;
+.btn.btn3{
+  top: 210px;
+  height: 40px;
 }
 
-.call-hangup i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 42px;
-    color: rgb(230, 8, 8);
-    font-size: 37px;
-    opacity: 0;
+.btn.rightBtn {
+  top: 170px;
+  height: 70px;
+  left: unset;
+  right: -2px;
+  border-radius: 0 4px 4px 0; 
 }
 
-.call-hangup::before{
-    content: '';
-    position: absolute;
-    top: 4px;
-    right: 45px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    visibility: hidden;
-    opacity: 0;
+.island-popup {
+  position: absolute;
+  top: 10px;
+  width: 90px;
+  height: 25px;
+  background: #000;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.call-attend i {
-    text-align: center;
-    font-size: 18px;
-    color: #fff;
+.island-popup:hover{
+  width: 200px;
 }
 
-@keyframes big-bar{
-    0%,100%{
-        width: 30%;
-        height: 18px;
-    }
-    50%{
-        width: 90%;
-        height: 45px;
-    }
-    75%{
-        width: 90%;
-        height: 45px;
-    }
-    90%{
-        width: 90%;
-        height: 45px;
-    }
+.island-popup.active {
+  width: 250px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  line-height: 25px;
+}
+
+.content p{
+  color: #fff;
+  font-size: 0.6em;
+  cursor: default;
+  visibility: hidden;
+  font-weight: 400;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.action {
+  position: relative;
+  color: #fff;
+  top: 5px;
+  display: flex;
+  gap: 12px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+ion-icon.red {
+  color: #f6443b;
+  transform: rotate(135deg);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+ion-icon.green {
+  color: #31d859;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.island-popup.active p,.island-popup:hover p, .island-popup:hover .action, .island-popup.active .action {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+.island-popup.active ion-icon.red {
+  background: #fd443b;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #fd443b;
+  margin-right: 12px;
+}
+
+.island-popup.active ion-icon.green {
+  background: #31d859;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #31d859;
+  margin-right: 8px;
+}
+
+.details {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.details .imgBx {
+  width: 0;
+  height: 0;
+  background: url('./src/alisher-aka-main-call.PNG');
+  background-size: 70px;
+  background-position: -15px -5px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.island-popup.active .details .imgBx{
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.island-popup.active p {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.island-popup.active .action {
+  top: 12px;
+}
+
+.island-popup * {
+  pointer-events: none;
 }
