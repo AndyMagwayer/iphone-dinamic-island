@@ -47,6 +47,9 @@ img{
     width: 30%;
     height: 18px;
     background-color: black;
+    position: absolute;
     top: 10px;
-
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-50%) ;
 }
