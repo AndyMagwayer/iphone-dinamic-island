@@ -12,23 +12,23 @@
     background-color: palegoldenrod;
 }
 
-.iphone{
+.iphone {
     width: 250px;
     height: 500px;
-    border:5px  solid black;
+    border: 5px solid black;
     border-radius: 35px;
     overflow: hidden;
     position: relative;
-    -webkit-box-reflect:below 25px  linear-gradient(transparent, rgba(255, 0, 0, 0.527)) ;
+    -webkit-box-reflect: below 25px linear-gradient(transparent, rgba(255, 0, 0, 0.527));
 }
 
-img{
+img {
     width: 100%;
     height: 100%;
 
 }
 
-.overlay{
+.overlay {
     width: 100%;
     height: 100%;
     /* background: red; */
@@ -39,17 +39,43 @@ img{
 
 }
 
-.iphone:hover .overlay{
+.iphone:hover .overlay {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.dynamic{
-    width: 30%;
-    height: 18px;
+.dynamic {
+    width: 90%;
+    height: 45px;
     background-color: black;
     position: absolute;
     top: 10px;
     border-radius: 25px;
     left: 50%;
-    transform: translateX(-50%) ;
+    transform: translateX(-50%);
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.profile img{
+    object-fit: cover;
+}
+
+.profile-name{
+    position: absolute;
+    left: 47px;
+    font-size: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
