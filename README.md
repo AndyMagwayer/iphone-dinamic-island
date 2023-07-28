@@ -8,7 +8,7 @@ this website done for educational purposes and do want to blame or offense someb
 
 Dynamic Island is a big surprise and the top feature of 2022 from Apple. I don't like to throw big words around, but the first thing I thought of was "It's revolution, Johnny" or something like that :)
 
-![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+![Dynamic Island](https://github.com/AndyMagwayer/iphone-dinamic-island/blob/main/dynamic-island-1.webp)
 
 At yesterday's Apple presentation, among other things, a new feature of the older series of iPhones was shown – Dynamic Island – such a working area around a round bang, the implementation of which became possible due to the reduction of the front camera.
 
