@@ -16,7 +16,7 @@ At yesterday's Apple presentation, among other things, a new feature of the olde
 
 The presentation briefly showed how it will be used, but it is already clear that some system notifications and actions will be embedded in the island, which previously were revealed to the full screen, occupying an unreasonably large space. It is also not yet clear whether standard push notifications will be built into the island, or whether they will retain the same appearance. Now it is only clear that the push of a phone call, the use of Face ID, and the connection of headphones will definitely be written into the concept of the island. Typical actions will be shown in a collapsed form, and if you want to get more information, the user will be able to click on the island.
 
-![Image alt](https://github.com/AndyMagwayer/iphone-dinamic-island/blob/main/dynamic-island3.webp)
+![Image alt](https://github.com/AndyMagwayer/iphone-dinamic-island/blob/main/%D0%BF%D1%88%D0%B02.gif)
 
 Dynamic Island is a function at the interface and engineering interface that perfectly describes the phrase "not a bug, but a feature". Previously, bangs were a problem that did not participate in user interaction in any way. It was clear to everyone that this was a temporary crutch solution that would eventually come to an end. The island, judging by the video, will take over part of the application interface in order to create additional space for placing data, contacts with the user and simplifying actions. Also, due to the fact that the push buttons will be located higher and the island will become an intuitive zone for some type of action, the iPhone's working area will expand and the time of using the smartphone may be reduced. Conceptually, it's very similar to TouchBar.
 
